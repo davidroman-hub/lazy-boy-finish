@@ -226,15 +226,15 @@
 .bottom5 {
   background: $white;
   margin-top: -180px;
-  clip-path: polygon(
-    0 0,
-    calc(20% - var(--a) - 0.414 * var(--g)) 0,
-    50% calc(var(--a) + 0.414 * var(--g)),
-    calc(80% + var(--a) + 0.414 * var(--g)) 0,
-    100% 0,
-    100% 100%,
-    0 100%
-  );
+  // clip-path: polygon(
+  //   0 0,
+  //   calc(20% - var(--a) - 0.414 * var(--g)) 0,
+  //   50% calc(var(--a) + 0.414 * var(--g)),
+  //   calc(80% + var(--a) + 0.414 * var(--g)) 0,
+  //   100% 0,
+  //   100% 100%,
+  //   0 100%
+  // );
 }
 
 .test {

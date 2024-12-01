@@ -18,7 +18,7 @@ const Main: FC<any> = () => {
         <div className="box bottom5 white" />
       </div>
 
-      <div>
+      <div className="containter-store-more">
         <Marquee />
         {CarouselStore()}
         <About />
