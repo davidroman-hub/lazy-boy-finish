@@ -151,18 +151,18 @@ const Footer: FC<any> = () => {
 
       <div className="footer-info-two">
         <div className="info-title-footer">Patrocinadores</div>
-        <div>
+        <div className="info-title-footer-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, iure
         </div>
-        <div>{"{Lista de pratocinadores}"}</div>
+        <div className="info-title-footer-text">{"{Lista de pratocinadores}"}</div>
       </div>
 
       <div className="footerinfo-three">
         <div className="info-title-footer">contacto</div>
-        <div>
+        <div className="info-title-footer-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, iure
         </div>
-        <div>{"{Lista contacto}"}</div>
+        <div className="info-title-footer-text">{"{Lista contacto}"}</div>
       </div>
     </div>
 
