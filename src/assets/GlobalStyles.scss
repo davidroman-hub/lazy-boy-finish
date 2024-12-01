@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: "Jaro";
+}
+body {
+  background-color: #9e9e9ee2;
+}
+
+$greybackground: #9e9e9ee2;
+$backgrouncomponents: #ebeae7;
+$red: #b54f4fe2;
+$mexicanRed: #770508;
+$black: #161616;
+$green: #2d6024;
+$whitegrey: #ecebea;
+$white: #fcfcfc;
+//$gold: #91745c;
+$gold: #d38e52;
+
+@import "./header";
+@import "./main";
+@import "./about";
+@import "./videos";
+@import "./navBar";
+@import "./footer";

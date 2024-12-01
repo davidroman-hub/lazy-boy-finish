@@ -1,0 +1,130 @@
+.first-photo-about {
+  height: 200px;
+  width: 100%;
+}
+
+.first-photo-about {
+  background-image: url("https://res.cloudinary.com/dm8dxwvix/image/upload/v1730557817/lazyboy/GettyImages-2171640043_dzzaeb.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.title-first-photo-about {
+  position: absolute;
+  bottom: 0;
+  color: $white;
+  letter-spacing: 0.1rem;
+  text-shadow: black 1px 0 15px;
+  width: 100%;
+  font-size: 72px;
+  line-height: 72px;
+  margin-left: 25px;
+}
+
+.h2-bio {
+  padding: 20px;
+}
+
+.biographie {
+  color: $white;
+  background: $black;
+  margin: 20px;
+}
+
+.info-contain-lazy {
+  font-size: 12px;
+  padding: 20px;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.block-animation {
+  animation: appear linear;
+  animation-timeline: view(); // show the animation when it shows in the screen
+  animation-range: entry 0% cover 40%; // to show the complete element
+}
+
+.about-modal {
+  color: $white;
+  background: $black;
+  margin: 20px;
+  display: flex;
+  @media (max-width: 860px) {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+}
+
+.about-lazy-stuff {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 860px) {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+.img-shoes-container {
+  width: 55%;
+  @media (max-width: 860px) {
+    width: 100%;
+  }
+}
+.img-shoes-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-lazy-stuff-trainning {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  @media (max-width: 1110px) {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+.about-modal-trainning {
+  color: $white;
+  background: $black;
+  margin: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  @media (max-width: 1110px) {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+}
+.about-contain-lazy-trainning {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+
+  @media (max-width: 1110px) {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}

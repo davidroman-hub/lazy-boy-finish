@@ -1,0 +1,23 @@
+.shorts-container {
+  background-color: $white;
+}
+
+.shorts-container h2 {
+  padding: 35px;
+  font-size: 70px;
+  letter-spacing: .1rem;
+}
+
+.crsl {
+  width: 1000px;
+  max-width: 120% - 20%;
+  margin: auto;
+}
+
+.carousel .control-next.control-arrow:before {
+  border-left: 8px solid black;
+}
+
+.carousel .control-prev.control-arrow:before {
+  border-right: 8px solid black;
+}

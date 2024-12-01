@@ -1,0 +1,242 @@
+.header-sections {
+  display: flex;
+  font-size: 24px;
+  background-color: $black;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  height: 100px;
+  color: $whitegrey;
+  //justify-content: space-between;
+  align-items: center;
+  z-index: 12;
+  border-bottom: 1px solid $gold;
+}
+
+.main-title {
+  font-size: 55px;
+}
+
+.container-header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content {
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 95px;
+  margin-bottom: 50px;
+  color: $mexicanRed;
+
+  &:hover {
+    color: $greybackground;
+    transition: 0.3s;
+  }
+}
+
+.option-nav-1 {
+  position: absolute;
+  left: 50%;
+  @media (max-width: 860px) {
+    left: 40%;
+  }
+}
+
+.background-clip {
+  ///good
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: -webkit-fill-available;
+  z-index: -1;
+  margin-top: -200px;
+  @media (max-width: 860px) {
+    margin-top: 0px;
+  }
+}
+
+.master-header-container {
+  width: -webkit-fill-available;
+}
+
+.img-blood {
+  max-width: 100%;
+  height: 75px;
+  @media (max-width: 740px) {
+    display: none;
+  }
+}
+
+.img-blood2 {
+  max-width: 100%;
+  height: 75px;
+  @media (max-width: 740px) {
+    display: none;
+  }
+}
+.option-nav {
+  position: relative;
+}
+
+.link-option-nav {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  @media (max-width: 740px) {
+    display: none;
+  }
+}
+
+.link-option-nav-2 {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  @media (max-width: 740px) {
+    display: none;
+  }
+}
+
+.link-option-nav-3 {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  @media (max-width: 740px) {
+    display: none;
+  }
+}
+
+.second-section {
+  background-color: $backgrouncomponents;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lazyboy-center-img {
+  margin-top: -350px;
+}
+
+.divider {
+  height: 300px;
+  width: 100%;
+}
+
+.divider-lazyboy-feet-green {
+  height: 20px;
+  background-color: $green;
+}
+
+.divider-lazyboy-feet-white {
+  height: 20px;
+  background-color: $white;
+}
+.divider-lazyboy-feet-red {
+  height: 20px;
+  background-color: $mexicanRed;
+}
+
+.divider-lazyboy-feet-gold {
+  height: 2px;
+  background-color: $gold;
+}
+
+//
+
+.box {
+  --a: 50px; /* the size of the triangle */
+  --g: 10px; /* the gap */
+  margin-top: -220px;
+  height: 200px;
+}
+.top {
+  background: transparent;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - var(--a)),
+    calc(50% + var(--a)) calc(100% - var(--a)),
+    50% 100%,
+    calc(50% - var(--a)) calc(100% - var(--a)),
+    0 calc(100% - var(--a))
+  );
+}
+.bottom {
+  background: $green;
+  margin-top: calc(var(--g) - var(--a));
+  clip-path: polygon(
+    0 0,
+    calc(20% - var(--a) - 0.414 * var(--g)) 0,
+    50% calc(var(--a) + 0.414 * var(--g)),
+    calc(80% + var(--a) + 0.414 * var(--g)) 0,
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+}
+
+.bottom2 {
+  background: $gold;
+  margin-top: -180px;
+  clip-path: polygon(
+    0 0,
+    calc(20% - var(--a) - 0.414 * var(--g)) 0,
+    50% calc(var(--a) + 0.414 * var(--g)),
+    calc(80% + var(--a) + 0.414 * var(--g)) 0,
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+}
+
+.bottom3 {
+  background: $white;
+  margin-top: -197px;
+  clip-path: polygon(
+    0 0,
+    calc(20% - var(--a) - 0.414 * var(--g)) 0,
+    50% calc(var(--a) + 0.414 * var(--g)),
+    calc(80% + var(--a) + 0.414 * var(--g)) 0,
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+}
+
+.bottom4 {
+  background: $mexicanRed;
+  margin-top: -198px;
+  clip-path: polygon(
+    0 0,
+    calc(20% - var(--a) - 0.414 * var(--g)) 0,
+    50% calc(var(--a) + 0.414 * var(--g)),
+    calc(80% + var(--a) + 0.414 * var(--g)) 0,
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+}
+
+.bottom5 {
+  background: $white;
+  margin-top: -180px;
+  clip-path: polygon(
+    0 0,
+    calc(20% - var(--a) - 0.414 * var(--g)) 0,
+    50% calc(var(--a) + 0.414 * var(--g)),
+    calc(80% + var(--a) + 0.414 * var(--g)) 0,
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+}
+
+.test {
+  background-color: red;
+}
