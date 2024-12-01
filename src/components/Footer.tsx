@@ -1,6 +1,50 @@
 import React, { FC } from "react";
+import Box from '@mui/material/Box';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
 
 const Footer: FC<any> = () => {
+
+  const darkTheme = createTheme({
+    palette: {
+      mode: 'dark',
+    },
+  })
+
+  const LanguageSelect = () => {
+    const [age, setAge] = React.useState('esp');
+
+    const handleChange = (event: SelectChangeEvent) => {
+      setAge(event.target.value as string);
+    };
+
+    return (
+      <ThemeProvider theme={darkTheme}>
+
+        <Box sx={{ minWidth: 120, marginTop: "20px" }}>
+          <FormControl fullWidth>
+            <InputLabel id="demo-simple-select-label">Idioma</InputLabel>
+            <Select
+              labelId="demo-simple-select-label"
+              id="demo-simple-select"
+              value={age}
+              label="Idioma"
+              onChange={handleChange}
+            >
+              <MenuItem value={"esp"}>Espanol</MenuItem>
+              <MenuItem value={"en"}>English</MenuItem>
+
+            </Select>
+          </FormControl>
+        </Box>
+      </ThemeProvider>
+    );
+  }
+
   return (
 
 
@@ -100,6 +144,8 @@ const Footer: FC<any> = () => {
 
 
           </ul>
+          <div>{LanguageSelect()}</div>
+          <div className="reserve-rights"> © 2024 derechos reservados Ronaldo Rodriguez</div>
         </div>
       </div>
 
@@ -117,7 +163,7 @@ const Footer: FC<any> = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, iure
         </div>
         <div>{"{Lista contacto}"}</div>
-      </div><div> 2024 derechos reservados</div>
+      </div>
     </div>
 
   );

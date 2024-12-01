@@ -26,16 +26,6 @@ const Header: FC<any> = () => {
               <CloseIcon />
             </Link>
           </li>
-          {/* {SIdebarData.map((item, index) => {
-              return (
-                <li key={index} className={item.cName}>
-                  <Link to={item.path}>
-                    {item.icon}
-                    <span>{item.title}</span>
-                  </Link>
-                </li>
-              );
-            })} */}
         </ul>
       </nav>
       <div className="container-header">
