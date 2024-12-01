@@ -26,6 +26,15 @@ const Header: FC<any> = () => {
               <CloseIcon />
             </Link>
           </li>
+          <li className="navbar-toggle-info">
+              {"a discutir con el cliente"}
+          </li>
+          <li className="navbar-toggle-info">
+          {"sobre las proximas"}
+          </li>
+          <li className="navbar-toggle-info">
+          {"opciones que iran aqui"}
+          </li>
         </ul>
       </nav>
       <div className="container-header">
