@@ -15,7 +15,7 @@ const Main: FC<any> = () => {
         <div className="box bottom3 white" />
         <div className="box bottom2 golden" />
         <div className="box bottom4 red" />
-        <div className="box bottom5 white" />
+        <div className="box bottom5 white aztec" />
       </div>
 
       <div className="containter-store-more">

@@ -226,15 +226,24 @@
 .bottom5 {
   background: $white;
   margin-top: -180px;
-  // clip-path: polygon(
-  //   0 0,
-  //   calc(20% - var(--a) - 0.414 * var(--g)) 0,
-  //   50% calc(var(--a) + 0.414 * var(--g)),
-  //   calc(80% + var(--a) + 0.414 * var(--g)) 0,
-  //   100% 0,
-  //   100% 100%,
-  //   0 100%
-  // );
+  background-image: url("../assets/imgs/aztec-calendar.svg");
+  background-repeat: no-repeat;
+  background-position: 25% 22%;
+  background-size: 100vw;
+  clip-path: polygon(
+    0 0,
+    calc(20% - var(--a) - 0.414 * var(--g)) 0,
+    50% calc(var(--a) + 0.414 * var(--g)),
+    calc(80% + var(--a) + 0.414 * var(--g)) 0,
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+
+  @media (max-width: 860px) {
+    background-position: 48% 1%;
+    background-size: 170vw;
+  }
 }
 
 .test {
