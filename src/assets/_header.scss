@@ -118,10 +118,52 @@
   flex-direction: column;
   justify-content: center;
 }
+@keyframes appear {
+  from {
+    left: -100px;
+  }
+  to {
+    left: 315px;
+  }
+}
+@-moz-keyframes appear {
+  /* Firefox */
+  from {
+    left: -100px;
+  }
+  to {
+    left: 315px;
+  }
+}
+@-webkit-keyframes appear {
+  /* Safari and Chrome */
+  from {
+    left: -100px;
+  }
+  to {
+    left: 315px;
+  }
+}
+@-o-keyframes appear {
+  /* Opera */
+  from {
+    left: -100px;
+  }
+  to {
+    left: 315px;
+  }
+}
 
 .lazyboy-center-img {
   margin-top: -350px;
+  animation: appear 2s;
+  -moz-animation: appear 2s;
+  /* Firefox */
+  -webkit-animation: appear 2s;
+  /* Safari and Chrome */
+  -o-animation: appear 2s;
 }
+
 
 .divider {
   height: 300px;
